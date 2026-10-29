@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Página de apresentação pessoal de João Antônio.">
+  <title>Apresentação pessoal | João Antônio</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --ink: #172033;
+      --accent: #5b5ce2;
+      --soft: #f4f6fb;
+    }
+
+    body {
+      margin: 0;
+      background: var(--soft);
+      color: var(--ink);
+      font-family: Arial, sans-serif;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #171a35, #4143a7);
+      color: white;
+    }
+
+    .section-card {
+      border: 0;
+      border-radius: 20px;
+      box-shadow: 0 12px 32px rgba(22, 30, 60, .08);
+    }
+
+    .profile-photo {
+      width: 190px;
+      height: 190px;
+      object-fit: cover;
+      border: 5px solid white;
+    }
+
+    .avatar-fallback {
+      width: 190px;
+      height: 190px;
+      display: none;
+      place-items: center;
+      border-radius: 50%;
+      background: white;
+      color: var(--accent);
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .site-link {
+      display: inline-block;
+      text-decoration: none;
+      border-radius: 10px;
+      padding: 12px 22px;
+      font-weight: bold;
+      transition: .2s;
+    }
+
+    .site-link:hover {
+      transform: translateY(-3px);
+    }
+
+    .primary {
+      background: var(--accent);
+      color: white;
+    }
+
+    .light {
+      background: #eef0ff;
+      color: #30318a;
+    }
+
+    .section-kicker {
+      color: var(--accent);
+      font-size: .8rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .table thead th {
+      background: #202344;
+      color: white;
+    }
+
+    footer {
+      background: #171a35;
+      color: white;
+    }
+
+    /* Responsividade para tablets */
+    @media (max-width: 767.98px) {
+      .hero {
+        text-align: center;
+      }
+
+      .profile-photo,
+      .avatar-fallback {
+        width: 150px;
+        height: 150px;
+      }
+
+      .section-card {
+        border-radius: 15px;
+      }
+    }
+
+    /* Responsividade para celulares */
+    @media (max-width: 575.98px) {
+      .site-link {
+        flex: 1 1 calc(50% - .5rem);
+        text-align: center;
+        padding: 10px;
+      }
+
+      .table {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="hero py-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-center g-4">
+
+        <div class="col-12 col-md-auto text-center">
+          <img
+            class="profile-photo rounded-circle"
+            src="Minha foto.png"
+            alt="Foto de João Antônio"
+            onerror="this.style.display='none'; document.getElementById('avatarFallback').style.display='grid';">
+
+          <div id="avatarFallback" class="avatar-fallback">
+            JA
+          </div>
+        </div>
+
+        <div class="col-12 col-md-8 col-lg-7">
+          <p class="text-uppercase mb-2">Apresentação pessoal</p>
+          <h1 class="display-4 fw-bold">Olá, eu sou João Antônio!</h1>
+          <p class="lead">
+            Um pouco sobre minha história, meus interesses
+            e os sites que fazem parte do meu dia a dia.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main class="container py-5">
+
+    <!-- Sobre mim -->
+    <section class="card section-card p-4 p-md-5 mb-4">
+      <p class="section-kicker">Quem sou eu</p>
+      <h2 class="h3 fw-bold">Sobre mim</h2>
+
+      <p>
+        Olá! Meu nome é <strong>João Antônio</strong> e sou de
+        <strong>Serra de São Bento</strong>, no Rio Grande do Norte.
+      </p>
+
+      <p>
+        No meu tempo livre, gosto de jogar no celular,
+        jogar bola e andar de moto.
+      </p>
+
+      <p class="mb-0">
+        Gosto bastante de tecnologia, jogos e futebol.
+        Também gosto de estar com meus amigos.
+      </p>
+    </section>
+
+    <!-- Sites favoritos -->
+    <section class="card section-card p-4 p-md-5 mb-4">
+      <p class="section-kicker">Meus favoritos</p>
+      <h2 class="h3 fw-bold mb-3">Sites que eu acesso</h2>
+
+      <nav class="d-flex flex-wrap gap-3"
+           aria-label="Sites favoritos">
+
+        <a class="site-link primary"
+           href="https://www.tiktok.com/"
+           target="_blank"
+           rel="noopener noreferrer">TikTok ↗</a>
+
+        <a class="site-link light"
+           href="https://www.instagram.com/"
+           target="_blank"
+           rel="noopener noreferrer">Instagram ↗</a>
+
+        <a class="site-link primary"
+           href="https://ff.garena.com/"
+           target="_blank"
+           rel="noopener noreferrer">Free Fire ↗</a>
+
+        <a class="site-link light"
+           href="https://www.whatsapp.com/"
+           target="_blank"
+           rel="noopener noreferrer">WhatsApp ↗</a>
+
+      </nav>
+    </section>
+
+    <!-- Coisas de que gosto -->
+    <section class="card section-card p-4 p-md-5">
+      <p class="section-kicker">Um pouco mais sobre mim</p>
+      <h2 class="h3 fw-bold mb-3">Coisas de que eu gosto</h2>
+
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover align-middle mb-0">
+          <thead>
+            <tr>
+              <th>O que eu gosto</th>
+              <th>Por que eu gosto</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Jogar no celular</td>
+              <td>É divertido e gosto de jogar nas horas livres.</td>
+            </tr>
+
+            <tr>
+              <td>Futebol</td>
+              <td>Gosto de jogar bola e me divertir com os amigos.</td>
+            </tr>
+
+            <tr>
+              <td>Andar de moto</td>
+              <td>Gosto da adrenalina.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="mt-5 py-4">
+    <div class="container text-center">
+      <p class="mb-1 fw-semibold">
+        João Antônio · Apresentação pessoal
+      </p>
+      <small>
+        Desenvolvido com HTML, CSS, Bootstrap 5 e Media Queries.
+      </small>
+    </div>
+  </footer>
+
+</body>
+</html>
+, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
